@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 
 namespace ExemploCRUD
 {
@@ -6,7 +7,9 @@ namespace ExemploCRUD
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BancoDados banco = new BancoDados();
+            Console.WriteLine
         }
     }
 }
+
