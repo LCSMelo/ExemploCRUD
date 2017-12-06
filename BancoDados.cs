@@ -21,8 +21,8 @@ namespace ExemploCRUD
             bool rs = false;
             try{
                 cn = new SqlConnection();
-                cn.ConnectionString = @"Data Source =.\sqlexpress;Initial Catalog=Papelaria; // Informa que os dados de conexão serão do tipo string
-                                       User ID = sa; Password = senai@123;";
+                cn.ConnectionString = @"Data Source =.\sqlexpress;Initial Catalog=Papelaria;
+                                       User ID = sa; Password = senai@123;"; // Informa que os dados de conexão serão do tipo string
                 cn.Open();
                 comandos = new SqlCommand(); //criar comandos
                 comandos.Connection = cn; //onde os camandos devem ser executados > conexão "cn"
@@ -59,8 +59,8 @@ namespace ExemploCRUD
             bool rs = false;
             try{
                 cn = new SqlConnection();
-                cn.ConnectionString = @"Data Source =.\sqlexpress;Initial Catalog=Papelaria; // Informa que os dados de conexão serão do tipo string
-                                       User ID = sa; Password = senai@123;";
+                cn.ConnectionString = @"Data Source =.\sqlexpress;Initial Catalog=Papelaria;
+                                       User ID = sa; Password = senai@123;"; // Informa que os dados de conexão serão do tipo string
                 cn.Open();
                 comandos = new SqlCommand(); //criar comandos
                 comandos.Connection = cn; //onde os camandos devem ser executados > conexão "cn"
@@ -68,6 +68,8 @@ namespace ExemploCRUD
                 comandos.CommandType = CommandType.Text; // indica o tipo de comando, como texto
                 comandos.CommandText = "update categoria set titulo = @vt where idcategoria = @vi"; // comando a ser executado com valor do parâmetro @vt indicado a seguir
                 comandos.Parameters.AddWithValue("@vt", cat.Titulo);
+                comandos.Parameters.AddWithValue("@vi", cat.IdCategoria);
+
                 
                 int r = comandos.ExecuteNonQuery(); // indica que depois da execução ele retonará um valor de número de linhas alteradas.
                 if(r > 0)
@@ -97,8 +99,8 @@ namespace ExemploCRUD
             bool rs = false;
             try{
                 cn = new SqlConnection();
-                cn.ConnectionString = @"Data Source =.\sqlexpress;Initial Catalog=Papelaria; // Informa que os dados de conexão serão do tipo string
-                                       User ID = sa; Password = senai@123;";
+                cn.ConnectionString = @"Data Source =.\sqlexpress;Initial Catalog=Papelaria;
+                                       User ID = sa; Password = senai@123;"; // Informa que os dados de conexão serão do tipo string
                 cn.Open();
                 comandos = new SqlCommand(); //criar comandos
                 comandos.Connection = cn; //onde os camandos devem ser executados > conexão "cn"

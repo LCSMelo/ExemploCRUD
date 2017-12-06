@@ -1099,11 +1099,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\39694603870\\Backend\\Projetos\\SQL\\ExemploCRUD\\ExemploCRUD.csproj",
+      "projectUniqueName": "c:\\Users\\39694603870\\Backend\\Projetos\\SQL\\ExemploCRUD\\ExemploCRUD.csproj",
       "projectName": "ExemploCRUD",
-      "projectPath": "C:\\Users\\39694603870\\Backend\\Projetos\\SQL\\ExemploCRUD\\ExemploCRUD.csproj",
+      "projectPath": "c:\\Users\\39694603870\\Backend\\Projetos\\SQL\\ExemploCRUD\\ExemploCRUD.csproj",
       "packagesPath": "C:\\Users\\39694603870\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\39694603870\\Backend\\Projetos\\SQL\\ExemploCRUD\\obj\\",
+      "outputPath": "c:\\Users\\39694603870\\Backend\\Projetos\\SQL\\ExemploCRUD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
